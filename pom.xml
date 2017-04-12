@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.testInTheCloud.com</groupId>
-  <artifactId>TestsInCloud</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>TestInCloud</name>
-      <dependencies>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.folloze.maven</groupId>
+    <artifactId>Folloze-Maven</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Folloze-Maven</name>
+    <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
