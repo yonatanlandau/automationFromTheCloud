@@ -26,7 +26,6 @@ public class Login extends BasePage{
 		fill(password, Accountpsw);
 		WebElement signin = driver.findElement(objMap.getLocator("folloze.homepage.signin"));
 		click(signin);
-		ExplicitWaitText(driver, "Create Board");
 	}
 	
 	
