@@ -5,13 +5,9 @@
     <classes>
       <class name="com.folloze.tests.NewTest">
         <methods>
-          <include name="SignUpregularEmail"/>
           <include name="LinkedInSignUpWithInvitation"/>
-          <include name="SignUpregularLinkedIn"/>
-          <include name="SignUpMSflowYes"/>
-          <include name="SignUpMSflowNO"/>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="EmailSignUpWithInvitation"/>
         </methods>
       </class> <!-- com.folloze.tests.NewTest -->
     </classes>
