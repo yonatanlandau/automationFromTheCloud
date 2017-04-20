@@ -5,9 +5,8 @@
     <classes>
       <class name="com.folloze.tests.NewTest">
         <methods>
-          <include name="LinkedInSignUpWithInvitation"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="favoriteBoard"/>
         </methods>
       </class> <!-- com.folloze.tests.NewTest -->
     </classes>

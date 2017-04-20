@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.folloze.data.ObjectMap;
+
 
 
 public class Login extends BasePage{
@@ -19,12 +19,11 @@ public class Login extends BasePage{
 	}
 	
 	public void signInEmail(String accountEmail,  String Accountpsw) throws Exception{
-		ObjectMap objMap = new ObjectMap("objectmap.properties");
-		WebElement mail = driver.findElement(objMap.getLocator("folloze.homepage.email"));
+		WebElement mail = driver.findElement(By.cssSelector("input[name='user[email]']"));
 		fill(mail, accountEmail);
-		WebElement password = driver.findElement(objMap.getLocator("folloze.homepage.password"));
+		WebElement password = driver.findElement(By.cssSelector("input[name='user[password]']"));
 		fill(password, Accountpsw);
-		WebElement signin = driver.findElement(objMap.getLocator("folloze.homepage.signin"));
+		WebElement signin = driver.findElement(By.cssSelector("button"));
 		click(signin);
 	}
 	

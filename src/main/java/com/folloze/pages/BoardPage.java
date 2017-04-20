@@ -14,6 +14,12 @@ public class BoardPage extends BasePage{
 		this.driver = driver;
 	}
 	
+	public void backToMyContent() throws InterruptedException{
+		sleep();
+		driver.navigate().back();
+		sleep();
+	}
+	
 	public void openFirstBoard(){
 		ExplicitWaitText(driver, "Yonatan");
 		ExplicitWaitText(driver, "Smile");

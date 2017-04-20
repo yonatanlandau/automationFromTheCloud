@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8534" started-at="2017-04-12T08:59:00Z" finished-at="2017-04-12T08:59:08Z">
+  <suite name="Default suite" duration-ms="36688" started-at="2017-04-20T08:33:26Z" finished-at="2017-04-20T08:34:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8534" started-at="2017-04-12T08:59:00Z" finished-at="2017-04-12T08:59:08Z">
+    <test name="Default test" duration-ms="36688" started-at="2017-04-20T08:33:26Z" finished-at="2017-04-20T08:34:02Z">
       <class name="com.folloze.tests.NewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.folloze.tests.NewTest@3bfdc050]" name="beforeClass" is-config="true" duration-ms="6637" started-at="2017-04-12T11:59:00Z" finished-at="2017-04-12T11:59:06Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.folloze.tests.NewTest@1e88b3c]" name="beforeClass" is-config="true" duration-ms="5241" started-at="2017-04-20T11:33:26Z" finished-at="2017-04-20T11:33:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="LinkedInSignUpWithInvitation()[pri:0, instance:com.folloze.tests.NewTest@3bfdc050]" name="LinkedInSignUpWithInvitation" duration-ms="735" started-at="2017-04-12T11:59:06Z" finished-at="2017-04-12T11:59:07Z">
+        <test-method status="PASS" signature="LoginTrue()[pri:0, instance:com.folloze.tests.NewTest@1e88b3c]" name="LoginTrue" duration-ms="3592" started-at="2017-04-20T11:33:31Z" finished-at="2017-04-20T11:33:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LinkedInSignUpWithInvitation -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.folloze.tests.NewTest@3bfdc050]" name="afterClass" is-config="true" duration-ms="1138" started-at="2017-04-12T11:59:07Z" finished-at="2017-04-12T11:59:08Z">
+        </test-method> <!-- LoginTrue -->
+        <test-method status="PASS" signature="newChannel()[pri:0, instance:com.folloze.tests.NewTest@1e88b3c]" name="newChannel" duration-ms="1133" started-at="2017-04-20T11:33:34Z" finished-at="2017-04-20T11:33:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
+        </test-method> <!-- newChannel -->
+        <test-method status="PASS" signature="createBoard()[pri:0, instance:com.folloze.tests.NewTest@1e88b3c]" name="createBoard" duration-ms="18705" started-at="2017-04-20T11:33:36Z" finished-at="2017-04-20T11:33:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBoard -->
+        <test-method status="PASS" signature="addBoardToChannel()[pri:0, instance:com.folloze.tests.NewTest@1e88b3c]" name="addBoardToChannel" duration-ms="6930" started-at="2017-04-20T11:33:54Z" finished-at="2017-04-20T11:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBoardToChannel -->
+        <test-method status="PASS" signature="favoriteBoard()[pri:0, instance:com.folloze.tests.NewTest@1e88b3c]" name="favoriteBoard" duration-ms="1056" started-at="2017-04-20T11:34:01Z" finished-at="2017-04-20T11:34:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- favoriteBoard -->
       </class> <!-- com.folloze.tests.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

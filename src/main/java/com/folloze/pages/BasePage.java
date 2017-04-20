@@ -29,13 +29,11 @@ public class BasePage {
 		el.sendKeys(data);
 	}
 	
-
+	
 	public  void ExplicitWaitText(WebDriver driver, String text){
 		(new WebDriverWait(driver, 15)).until(ExpectedConditions.elementToBeClickable(By.partialLinkText(text)));		
 	}
-	
 
-	
 	public void ExplicitWaitClick(WebDriver driver, WebElement el){
 		(new WebDriverWait(driver,15)).until(ExpectedConditions.elementToBeClickable(el));
 	}
@@ -55,6 +53,7 @@ public class BasePage {
 		wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(el));
 	}
+	
 	
 	public void sleep() throws InterruptedException{
 		Thread.sleep(5000);
