@@ -90,9 +90,11 @@ public class Onboarding extends BasePage{
 		click(favIcon);
 		WebElement favorites = driver.findElement(By.cssSelector(".favorites"));
 		click(favorites);
-		
-		
-		//
+	}
+	
+	public void navToChannel(){
+		WebElement channel = driver.findElement(By.xpath(".//*[@id='app']/div/div[2]/div[1]/ul/li[5]/a"));
+		click(channel);
 	}
 	
 	public String boardNameAtMyContent(){

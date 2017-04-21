@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.folloze.pages.BoardPage;
+import com.folloze.pages.ChannelUI;
 import com.folloze.pages.Login;
 import com.folloze.pages.Onboarding;
 
@@ -33,7 +34,7 @@ public class NewTest {
 	@Test (priority=1)
 	public void LoginTrue() throws Exception {
 		Login log1 = new Login(driver);
-		log1.signInEmail("sivan@sivan.com", "qaqa1111");
+		log1.signInEmail("admino123@yopmail.com", "qwer1234");
 		Onboarding onB = new Onboarding(driver);
 		Assert.assertEquals(onB.isSignedIn(), "https://app.folloze.com/app/my_content");
 	}
@@ -69,11 +70,18 @@ public class NewTest {
 		Assert.assertEquals(exName, acName);
 	}
 	
+	@Test (priority=6)
+	public void inviteToChannel() throws InterruptedException{
+		Onboarding onB = new Onboarding(driver);
+		ChannelUI chUI = new ChannelUI(driver);
+		onB.navToChannel();
+		chUI.invite();
+		Assert.assertEquals(chUI.isInvited(), "viewertest02@yopmail.com");
+	}
 	
-	
-//	@AfterClass
-//	public void afterClass() {
-//		driver.quit();
-//	}
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+	}
 	
 }
