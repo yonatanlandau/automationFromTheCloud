@@ -31,24 +31,90 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">61.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">108.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">com.folloze.tests.NewTest</td><td><a href="#m1"><b>addBoardToChannel</b>  </a></td><td class="numi">1</td><td>1493041677717</td><td class="numi">6606</td></tr><tr class="failedodd"><td><a href="#m2"><b>changeUserSettings</b>  </a></td><td class="numi">1</td><td>1493041752671</td><td class="numi">67</td></tr><tr class="failedodd"><td><a href="#m3"><b>inviteToBoard</b>  </a></td><td class="numi">1</td><td>1493041741900</td><td class="numi">10766</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="6">com.folloze.tests.NewTest</td><td><a href="#m1"><b>LoginTrue</b>  </a></td><td class="numi">1</td><td>1492754932703</td><td class="numi">6761</td></tr><tr class="passedodd"><td><a href="#m2"><b>addBoardToChannel</b>  </a></td><td class="numi">1</td><td>1492754962119</td><td class="numi">6942</td></tr><tr class="passedodd"><td><a href="#m3"><b>createBoard</b>  </a></td><td class="numi">1</td><td>1492754941441</td><td class="numi">20677</td></tr><tr class="passedodd"><td><a href="#m4"><b>favoriteBoard</b>  </a></td><td class="numi">1</td><td>1492754969062</td><td class="numi">1014</td></tr><tr class="passedodd"><td><a href="#m5"><b>inviteToChannel</b>  </a></td><td class="numi">1</td><td>1492754970077</td><td class="numi">16450</td></tr><tr class="passedodd"><td><a href="#m6"><b>newChannel</b>  </a></td><td class="numi">1</td><td>1492754939465</td><td class="numi">1975</td></tr>
+<tr class="passedodd"><td rowspan="6">com.folloze.tests.NewTest</td><td><a href="#m4"><b>LoginTrue</b>  </a></td><td class="numi">1</td><td>1493041650400</td><td class="numi">3838</td></tr><tr class="passedodd"><td><a href="#m5"><b>addItemsToBoard</b>  </a></td><td class="numi">1</td><td>1493041725780</td><td class="numi">16119</td></tr><tr class="passedodd"><td><a href="#m6"><b>createBoard</b>  </a></td><td class="numi">1</td><td>1493041655642</td><td class="numi">22074</td></tr><tr class="passedodd"><td><a href="#m7"><b>favoriteBoard</b>  </a></td><td class="numi">1</td><td>1493041684326</td><td class="numi">9851</td></tr><tr class="passedodd"><td><a href="#m8"><b>inviteToChannel</b>  </a></td><td class="numi">1</td><td>1493041694179</td><td class="numi">31600</td></tr><tr class="passedodd"><td><a href="#m9"><b>newChannel</b>  </a></td><td class="numi">1</td><td>1493041654239</td><td class="numi">1402</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.folloze.tests.NewTest:LoginTrue</h2>
+<h2 id="m1">com.folloze.tests.NewTest:changeUserSettings</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element &lt;span class=&quot;popover-menu-icon&quot;&gt;&lt;/span&gt; is not clickable at point (1880, 29). Other element would receive the click: &lt;div class=&quot;bg ng-scope&quot; ng-if=&quot;$ctrl.list.length&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 42 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;FollozePC-PC&apos;, ip: &apos;192.168.1.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\FOLLOZ~1\AppData\Local\Temp\scoped_dir4492_18869}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 626c04961c41c930be255fe577f372fe</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at com.folloze.pages.BasePage.click(BasePage.java:24)
+<br/>at com.folloze.pages.Onboarding.userSettings(Onboarding.java:143)
+<br/>at com.folloze.tests.NewTest.changeUserSettings(NewTest.java:119)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.folloze.tests.NewTest:createBoard</h2>
+<h2 id="m2">com.folloze.tests.NewTest:addBoardToChannel</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at org.testng.Assert.assertEquals(Assert.java:296)
+<br/>at com.folloze.tests.NewTest.addBoardToChannel(NewTest.java:74)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.folloze.tests.NewTest:favoriteBoard</h2>
+<h2 id="m3">com.folloze.tests.NewTest:inviteToBoard</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element &lt;span class=&quot;share-icon&quot;&gt;&lt;/span&gt; is not clickable at point (1773, 83). Other element would receive the click: &lt;div class=&quot;bg ng-scope&quot; ng-if=&quot;$ctrl.list.length&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 27 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;FollozePC-PC&apos;, ip: &apos;192.168.1.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\FOLLOZ~1\AppData\Local\Temp\scoped_dir4492_18869}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 626c04961c41c930be255fe577f372fe</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at com.folloze.pages.BasePage.click(BasePage.java:24)
+<br/>at com.folloze.pages.BoardPage.isBoardShared(BoardPage.java:86)
+<br/>at com.folloze.tests.NewTest.inviteToBoard(NewTest.java:110)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.folloze.tests.NewTest:newChannel</h2>
+<h2 id="m4">com.folloze.tests.NewTest:favoriteBoard</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.folloze.tests.NewTest:addBoardToChannel</h2>
+<h2 id="m5">com.folloze.tests.NewTest:createBoard</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.folloze.tests.NewTest:inviteToChannel</h2>
+<h2 id="m6">com.folloze.tests.NewTest:addItemsToBoard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.folloze.tests.NewTest:inviteToChannel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.folloze.tests.NewTest:newChannel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.folloze.tests.NewTest:LoginTrue</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

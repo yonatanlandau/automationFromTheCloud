@@ -59,5 +59,10 @@
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_111/lib/plugin.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_111/lib/resources.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_111/lib/rt.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
