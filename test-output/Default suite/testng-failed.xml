@@ -5,11 +5,9 @@
     <classes>
       <class name="com.folloze.tests.NewTest">
         <methods>
-          <include name="addBoardToChannel"/>
-          <include name="changeUserSettings"/>
+          <include name="setup"/>
           <include name="afterClass"/>
-          <include name="inviteToBoard"/>
-          <include name="beforeClass"/>
+          <include name="createBoard"/>
         </methods>
       </class> <!-- com.folloze.tests.NewTest -->
     </classes>

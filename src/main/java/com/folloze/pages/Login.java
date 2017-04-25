@@ -14,7 +14,7 @@ public class Login extends BasePage{
 		this.driver = driver;
 	}
 	
-	public void signInEmail(String accountEmail,  String Accountpsw) throws Exception{
+	public void signInEmail(String accountEmail,  String Accountpsw){
 		try{
 			WebElement mail = driver.findElement(By.cssSelector("input[name='user[email]']"));
 			fill(mail, accountEmail);
@@ -28,9 +28,20 @@ public class Login extends BasePage{
 		
 	}
 	
-	public void signUp(){
-		WebElement signUpLink = driver.findElement(By.linkText("Sign Up"));
-		click(signUpLink);
+	public boolean isSignInError(){
+		boolean error = false;
+		String errorMessage = driver.findElement(By.tagName("p")).getText();
+		if(errorMessage.contains("Wrong email or password, please try again.")){
+			error = true;
+			return error;
+		}else{
+			return error;
+		}
 	}
+	
+//	public void signUp(){
+//		WebElement signUpLink = driver.findElement(By.linkText("Sign Up"));
+//		click(signUpLink);
+//	}
 	
 }

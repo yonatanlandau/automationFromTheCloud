@@ -15,10 +15,16 @@ public class Onboarding extends BasePage{
 	}
 
 
-	public String isSignedIn(){
+	public boolean isSignedIn(){
+		boolean currentURL = false;
 		ExplicitWaitClick(driver, driver.findElement(By.className("popover-menu-icon")));
 		String url = driver.getCurrentUrl();
-		return url;
+		if(url.contains("https://app.folloze.com/app/my_content")){
+			currentURL = true;
+			return currentURL;
+		}else{
+			return currentURL;
+		}
 	}
 
 
@@ -37,9 +43,21 @@ public class Onboarding extends BasePage{
 			System.out.println("Something went wrong");
 		}
 	}
+	
+	public boolean isChannelCreated(){
+		boolean channelCreated = false;
+		String channelName = driver.findElement(By.xpath(".//*[@id='app']/div/div[2]/div[1]/ul/li[5]/a/span[2]")).getText();
+		if(channelName.contains("TestChannel111")){
+			channelCreated = true;
+			return channelCreated;
+		}else{
+			return channelCreated;
+		}
+	}
 
 	public void createBoard() throws InterruptedException{
 		try{
+			sleep();
 			WebElement newBoard = driver.findElement(By.xpath(".//*[@id='app']/div/div[2]/div[1]/div/div/button[1]"));
 			click(newBoard);
 			WebElement boardName = driver.findElement(By.xpath("html/body/modals-list/div/ul/li/modal/div/div[2]/form/div/form/ul[1]/li[1]/input"));
