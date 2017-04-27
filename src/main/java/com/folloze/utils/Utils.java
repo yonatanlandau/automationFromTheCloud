@@ -14,7 +14,7 @@ public class Utils {
 
 	public static WebDriver getDriver(){
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "/TestsInCloud/src/main/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "//src/test/resources/chromedriver2.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.addArguments("--start-maximized");
