@@ -23,12 +23,10 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.3.9</version>
+                    <version>3.2</version>
                     <configuration>
                         <verbose>true</verbose>
                         <fork>true</fork>
-                        <source>1.8</source>
-                        <target>1.8</target>
                         <executable>${JAVA_HOME}/bin/javac</executable>
                         <compilerVersion>1.7.0_131</compilerVersion>
                     </configuration>
