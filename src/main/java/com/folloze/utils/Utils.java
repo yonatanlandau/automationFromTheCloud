@@ -12,9 +12,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Utils {
 
-	public static WebDriver getDriver(){
+	public static WebDriver getDriver(String URL){
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "//src/main/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/FollozePC/projects/TestsInCloud/src/test/resources/chromedriver2.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.addArguments("--start-maximized");
@@ -25,7 +25,7 @@ public class Utils {
 		prefs.put("profile.password_manager_enabled", false);
 		options.setExperimentalOption("prefs", prefs);
 		driver = new ChromeDriver(options);
-		driver.get("http://app.folloze.com");
+		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;

@@ -58,6 +58,8 @@ public class Onboarding extends BasePage{
 	public void createBoard() throws InterruptedException{
 		try{
 			sleep();
+			WebElement addNew = driver.findElement(By.xpath(".//*[@id='app']/div/div[2]/div[1]/div/div/div"));
+			click(addNew);
 			WebElement newBoard = driver.findElement(By.xpath(".//*[@id='app']/div/div[2]/div[1]/div/div/button[1]"));
 			click(newBoard);
 			WebElement boardName = driver.findElement(By.xpath("html/body/modals-list/div/ul/li/modal/div/div[2]/form/div/form/ul[1]/li[1]/input"));

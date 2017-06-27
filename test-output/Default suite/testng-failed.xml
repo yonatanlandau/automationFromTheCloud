@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="afterClass"/>
-          <include name="createBoard"/>
+          <include name="inviteToBoard"/>
         </methods>
       </class> <!-- com.folloze.tests.NewTest -->
     </classes>

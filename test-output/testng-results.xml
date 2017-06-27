@@ -1,60 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="123558" started-at="2017-04-25T09:50:55Z" finished-at="2017-04-25T09:52:59Z">
+  <suite name="Default suite" duration-ms="35639" started-at="2017-06-27T12:36:54Z" finished-at="2017-06-27T12:37:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="123558" started-at="2017-04-25T09:50:55Z" finished-at="2017-04-25T09:52:59Z">
+    <test name="Default test" duration-ms="35639" started-at="2017-06-27T12:36:54Z" finished-at="2017-06-27T12:37:29Z">
       <class name="com.folloze.tests.NewTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="setup" is-config="true" duration-ms="7157" started-at="2017-04-25T12:50:55Z" finished-at="2017-04-25T12:51:02Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.folloze.tests.NewTest@56ef9176]" name="setup" is-config="true" duration-ms="5490" started-at="2017-06-27T15:36:54Z" finished-at="2017-06-27T15:36:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginError()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="LoginError" duration-ms="2016" started-at="2017-04-25T12:51:02Z" finished-at="2017-04-25T12:51:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginError -->
-        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="LoginSuccess" duration-ms="4157" started-at="2017-04-25T12:51:04Z" finished-at="2017-04-25T12:51:08Z">
+        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:com.folloze.tests.NewTest@56ef9176]" name="LoginSuccess" duration-ms="4240" started-at="2017-06-27T15:36:59Z" finished-at="2017-06-27T15:37:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginSuccess -->
-        <test-method status="PASS" signature="newChannel()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="newChannel" duration-ms="1205" started-at="2017-04-25T12:51:08Z" finished-at="2017-04-25T12:51:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newChannel -->
-        <test-method status="PASS" signature="createBoard()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="createBoard" duration-ms="26787" started-at="2017-04-25T12:51:10Z" finished-at="2017-04-25T12:51:36Z">
+        <test-method status="PASS" signature="createBoard()[pri:0, instance:com.folloze.tests.NewTest@56ef9176]" name="createBoard" duration-ms="14622" started-at="2017-06-27T15:37:04Z" finished-at="2017-06-27T15:37:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBoard -->
-        <test-method status="PASS" signature="addBoardToChannel()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="addBoardToChannel" duration-ms="6858" started-at="2017-04-25T12:51:36Z" finished-at="2017-04-25T12:51:43Z">
+        <test-method status="PASS" signature="inviteToBoard()[pri:0, instance:com.folloze.tests.NewTest@56ef9176]" name="inviteToBoard" duration-ms="11258" started-at="2017-06-27T15:37:18Z" finished-at="2017-06-27T15:37:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addBoardToChannel -->
-        <test-method status="PASS" signature="favoriteBoard()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="favoriteBoard" duration-ms="5973" started-at="2017-04-25T12:51:43Z" finished-at="2017-04-25T12:51:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- favoriteBoard -->
-        <test-method status="PASS" signature="inviteToChannel()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="inviteToChannel" duration-ms="31586" started-at="2017-04-25T12:51:49Z" finished-at="2017-04-25T12:52:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inviteToChannel -->
-        <test-method status="PASS" signature="addItemsToBoard()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="addItemsToBoard" duration-ms="16051" started-at="2017-04-25T12:52:21Z" finished-at="2017-04-25T12:52:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addItemsToBoard -->
-        <test-method status="PASS" signature="changeUserSettings()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="changeUserSettings" duration-ms="15718" started-at="2017-04-25T12:52:37Z" finished-at="2017-04-25T12:52:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeUserSettings -->
-        <test-method status="PASS" signature="searchForBoards()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="searchForBoards" duration-ms="5123" started-at="2017-04-25T12:52:53Z" finished-at="2017-04-25T12:52:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchForBoards -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.folloze.tests.NewTest@27efef64]" name="afterClass" is-config="true" duration-ms="904" started-at="2017-04-25T12:52:58Z" finished-at="2017-04-25T12:52:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
+        </test-method> <!-- inviteToBoard -->
       </class> <!-- com.folloze.tests.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

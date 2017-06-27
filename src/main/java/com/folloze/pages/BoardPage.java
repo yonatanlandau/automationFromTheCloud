@@ -65,25 +65,28 @@ public class BoardPage extends BasePage{
 		click(driver.findElement(By.cssSelector("input[type='submit']")));
 	}
 	
-	public void shareBoard() throws InterruptedException{
-		sleep();
+	public void shareBoard(String inviteer) throws InterruptedException{
+		
 		WebElement shareIcon = driver.findElement(By.cssSelector(".share-icon"));
+		ExplicitWaitClick(driver, shareIcon);
 		click(shareIcon);
 		WebElement editorSet = driver.findElement(By.xpath("//ul/li[1]/h3/span[1]/a"));
+		ExplicitWaitClick(driver, editorSet);
 		click(editorSet);
 		WebElement mailField = driver.findElement(By.cssSelector(".inline-selector.ng-scope.ng-isolate-scope.ng-empty.ng-valid.ng-valid-email>.inline-selector-input-container>input"));
-		fill(mailField, "editorTest01prod@yopmail.com");
+		fill(mailField, inviteer);
 		mailField.sendKeys(Keys.ENTER);
 		WebElement sendInvites = driver.findElement(By.xpath("//div/div[3]/a[2]"));
 		click(sendInvites);
-		sleep();
+		//sleep();
 	}
 	
-	public String isBoardShared() throws InterruptedException{
+	public String isBoardShared(String inviteer) throws InterruptedException{
+		sleep();
 		WebElement shareIcon = driver.findElement(By.cssSelector(".share-icon"));
 		click(shareIcon);
 		WebElement searchBar = driver.findElement(By.cssSelector(".container-right>input"));
-		fill(searchBar, "editortest01prod@yopmail.com");
+		fill(searchBar, inviteer);
 		sleep();
 		String mail = driver.findElement(By.xpath("//ul/li[2]/div/div[2]/span")).getText();
 		return mail;
